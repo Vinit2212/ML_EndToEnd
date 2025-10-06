@@ -39,7 +39,7 @@ def predict_datapoint():
         return render_template('home.html', results=results[0])
     
 
-if __name__ == "__main__":
-    port = 5001
-    print(f"Server running at: http://127.0.0.1:{port}")
-    app.run(port=port)
+# if __name__ == "__main__":
+#     port = 5001
+#     print(f"Server running at: http://127.0.0.1:{port}")
+#     app.run(port=port)
