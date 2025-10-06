@@ -45,13 +45,9 @@ def predict_datapoint():
 #     app.run(port=port)
 
 
-@application.route('/')
-def home():
-    return "<h2>Welcome to the Student Marks Predictor!</h2><p>Use /predict to make predictions.</p>"
-
-@application.route('/health')
+@app.route('/health')
 def health():
     return "ok", 200
 
 if __name__ == '__main__':
-    application.run(host='0.0.0.0', port=5001)
+    app.run(host='0.0.0.0', port=5001)
